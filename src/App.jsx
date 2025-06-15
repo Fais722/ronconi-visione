@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="container" style={{ padding: '2rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+      <h1>Ronconi: Visione Strategica per la Riorganizzazione</h1>
+      <p><strong>Azione mirata, nessun rumore. Risultati misurabili.</strong></p>
+
+      <h2>Obiettivi chiari</h2>
+      <ul>
+        <li>✅ Mappatura silenziosa dei processi, senza interrompere l'operatività</li>
+        <li>✅ Analisi delle attività reali, tempi e colli di bottiglia</li>
+        <li>✅ Organizzazione del personale per carichi, ruoli e priorità</li>
+        <li>✅ Pianificazione agile con strumenti semplici (es: Smartsheet)</li>
+        <li>✅ Revisione software: fatturazione, magazzino, spedizioni</li>
+        <li>✅ Integrazione tecnica e gestionale con l'ambiente Gucon</li>
+        <li>✅ Stress relief per l’ufficio tecnico e valorizzazione dei ricambi</li>
+        <li>✅ Standardizzazione del flusso: offerta → ordine → progettazione → produzione → installazione</li>
+      </ul>
+
+      <h2>Approccio</h2>
+      <p>
+        Primo periodo di osservazione silenziosa. Nessun disturbo all’operatività.  
+        Solo dati, realtà e una proposta concreta.
       </p>
-    </>
+
+      <h2>Prossimo passo</h2>
+      <p>
+        Una riunione tecnica interna con accesso riservato.  
+        Questo è il mio contributo per trasformare Ronconi da azienda stressata a impianto che lavora in pace, con margine.
+      </p>
+
+      <p style={{ marginTop: '2rem', fontStyle: 'italic' }}>Federico</p>
+    </div>
   )
 }
 

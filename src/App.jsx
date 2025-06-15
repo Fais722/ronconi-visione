@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <div style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
-      {/* Immagine di sfondo */}
+      {/* Immagine di sfondo visibile meglio */}
       <div
         style={{
           position: 'absolute',
@@ -12,14 +12,14 @@ function App() {
           width: '100%',
           height: '100%',
           backgroundImage: 'url("/ronconi-immagine.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: 'cover', // Riempi tutto ma mantiene il focus
+          backgroundPosition: 'top center', // Forza il centro alto dell’immagine
           backgroundRepeat: 'no-repeat',
           zIndex: -2,
         }}
       ></div>
 
-      {/* Overlay scuro */}
+      {/* Overlay scuro per leggibilità */}
       <div
         style={{
           position: 'absolute',
@@ -32,7 +32,7 @@ function App() {
         }}
       ></div>
 
-      {/* Contenuto */}
+      {/* Contenuto sovrapposto */}
       <div
         style={{
           color: 'white',

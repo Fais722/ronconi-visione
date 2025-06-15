@@ -2,9 +2,23 @@ import './App.css'
 
 function App() {
   return (
-    <div className="container" style={{ padding: '2rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
-      <h1>Ronconi: Visione Strategica per la Riorganizzazione</h1>
-      <p><strong>Azione mirata, nessun rumore. Risultati misurabili.</strong></p>
+    <div
+      style={{
+        backgroundImage: 'url("/ronconi-immagine.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+        color: 'white',
+        padding: '3rem',
+        textShadow: '0 0 8px rgba(0,0,0,0.8)',
+      }}
+    >
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+        Ronconi: Visione Strategica per la Riorganizzazione
+      </h1>
+      <p style={{ fontWeight: 'bold' }}>
+        Azione mirata, nessun rumore. Risultati misurabili.
+      </p>
 
       <h2>Obiettivi chiari</h2>
       <ul>
@@ -30,7 +44,7 @@ function App() {
         Questo è il mio contributo per trasformare Ronconi da azienda stressata a impianto che lavora in pace, con margine.
       </p>
 
-      <p style={{ marginTop: '2rem', fontStyle: 'italic' }}>Federico</p>
+      <p style={{ marginTop: '2rem', fontStyle: 'italic', fontSize: '1.2rem' }}>Faisal Bahar</p>
     </div>
   )
 }

@@ -2,74 +2,64 @@ import './App.css'
 
 function App() {
   return (
-    <div style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
-      {/* Immagine di sfondo visibile meglio */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundImage: 'url("/ronconi-immagine.png")',
-          backgroundSize: 'cover', // Riempi tutto ma mantiene il focus
-          backgroundPosition: 'top center', // Forza il centro alto dell’immagine
-          backgroundRepeat: 'no-repeat',
-          zIndex: -2,
-        }}
-      ></div>
+    <div style={{
+      backgroundColor: '#f5f5f5',
+      minHeight: '100vh',
+      fontFamily: 'Helvetica, sans-serif',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '4rem 1rem',
+      color: '#222',
+    }}>
+      <div style={{
+        maxWidth: '800px',
+        width: '100%',
+        backgroundColor: '#fff',
+        padding: '3rem',
+        borderRadius: '16px',
+        boxShadow: '0 0 40px rgba(0,0,0,0.1)',
+      }}>
+        <h1 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>
+          Ronconi: Visione Strategica per la Riorganizzazione
+        </h1>
+        <p style={{ textAlign: 'center', fontWeight: 500, marginBottom: '2rem' }}>
+          Azione mirata, nessun rumore. Risultati misurabili.
+        </p>
 
-      {/* Overlay scuro per leggibilità */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          zIndex: -1,
-        }}
-      ></div>
-
-      {/* Contenuto sovrapposto */}
-      <div
-        style={{
-          color: 'white',
-          padding: '3rem',
-          fontFamily: 'Arial, sans-serif',
-          lineHeight: '1.6',
-          textShadow: '0 0 8px rgba(0,0,0,0.7)',
-        }}
-      >
-        <h1>Ronconi: Visione Strategica per la Riorganizzazione</h1>
-        <p><strong>Azione mirata, nessun rumore. Risultati misurabili.</strong></p>
-
-        <h2>Obiettivi chiari</h2>
-        <ul>
-          <li>✅ Mappatura silenziosa dei processi, senza interrompere l'operatività</li>
+        <h2>🎯 Obiettivi chiari</h2>
+        <ul style={{ lineHeight: '1.8', paddingLeft: '1.2rem' }}>
+          <li>✅ Mappatura silenziosa dei processi, senza interrompere l’operatività</li>
           <li>✅ Analisi delle attività reali, tempi e colli di bottiglia</li>
           <li>✅ Organizzazione del personale per carichi, ruoli e priorità</li>
           <li>✅ Pianificazione agile con strumenti semplici (es: Smartsheet)</li>
           <li>✅ Revisione software: fatturazione, magazzino, spedizioni</li>
-          <li>✅ Integrazione tecnica e gestionale con l'ambiente Gucon</li>
+          <li>✅ Integrazione tecnica e gestionale con l’ambiente Gucon</li>
           <li>✅ Stress relief per l’ufficio tecnico e valorizzazione dei ricambi</li>
           <li>✅ Standardizzazione del flusso: offerta → ordine → progettazione → produzione → installazione</li>
         </ul>
 
-        <h2>Approccio</h2>
+        <h2 style={{ marginTop: '2rem' }}>🧭 Approccio</h2>
         <p>
-          Primo periodo di osservazione silenziosa. Nessun disturbo all’operatività.  
+          Primo periodo di osservazione silenziosa. Nessun disturbo all’operatività.
           Solo dati, realtà e una proposta concreta.
         </p>
 
-        <h2>Prossimo passo</h2>
+        <h2 style={{ marginTop: '2rem' }}>🚀 Prossimo passo</h2>
         <p>
-          Una riunione tecnica interna con accesso riservato.  
+          Una riunione tecnica interna con accesso riservato.
           Questo è il mio contributo per trasformare Ronconi da azienda stressata a impianto che lavora in pace, con margine.
         </p>
 
-        <p style={{ marginTop: '2rem', fontStyle: 'italic', fontSize: '1.2rem' }}>Faisal Bahar</p>
+        <p style={{
+          textAlign: 'right',
+          marginTop: '3rem',
+          fontStyle: 'italic',
+          fontWeight: 'bold',
+          fontSize: '1.1rem'
+        }}>
+          Faisal Bahar
+        </p>
       </div>
     </div>
   )
